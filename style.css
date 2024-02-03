@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #09ff00, #addaff, #ffae00);
+    color: #662e00;
+    margin: 0;
+    font-size: 16px; /* Base font size for readability */
+}
+
+.container {
+    width: 90%; /* Adjust for smaller screens */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem; /* Add padding for header content */
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    float: right;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.hero {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.input-container {
+    margin: 1rem auto;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff9900;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 1rem; /* Ensure readable button text */
+}
+
+button:hover {
+    background-color: #f98700;
+}
+
+.image-container {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+    .flag {
+        display: none;
+    }
+
+    .hero {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+}
