@@ -1,31 +1,34 @@
-import * as stableDiffusion from 'stable-diffusion-js'; // Placeholder for library import
+import * as stableDiffusion from 'stable-diffusion-js';
+const openai = require('openai');
 
-// Function for generating images using either client-side library or API
+openai.apiKey = "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";
+
 const generateImage = async (prompt) => {
   try {
+    // Check for client-side support
     if (stableDiffusion.isSupported()) {
-      // Use client-side library if available
       const imageData = await stableDiffusion.generateImage(prompt);
-      return imageData; // Return image data directly
+      return imageData;
     } else {
-      // Use API if client-side generation is not supported
-      const response = await fetch('YOUR_API_ENDPOINT', {
-        method: 'POST',
-        headers: {
-          'Authorization': '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',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ prompt })
+      // Use OpenAI API
+      const response = await openai.createImage({
+        model: "dall-e-3",
+        prompt: prompt,
+        n: 1,
+        size: "1024x1024",
       });
 
-      const imageUrl = await response.json();
-      return imageUrl; // Return image URL from API
+      const imageUrl = response.data.data[0].url;
+      return imageUrl;
     }
   } catch (error) {
-    console.error(error);
+    console.error(error); // Log the error for debugging
     throw new Error('Image generation failed'); // Re-throw for consistent error handling
   }
 };
+
+// ... rest of  code, including event listners
+
 
 const generateButton = document.getElementById('generate-button');
 const generatedImage = document.getElementById('generated-image');
