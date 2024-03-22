@@ -1,7 +1,7 @@
 import * as stableDiffusion from 'stable-diffusion-js';
 const openai = require('openai');
 
-openai.apiKey = "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";
+openai.apiKey = process.env.api_key;
 
 const generateImage = async (prompt) => {
   try {
