@@ -1,125 +1,128 @@
-/* Global Styles */
-* {
+/* General Reset */
+body, h1, h2, h3, p, table, footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Body Styling */
 body {
-    background-color: #121212; /* Dark background for dark mode */
-    color: #e0e0e0; /* Subtle text color for better readability */
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    overflow-x: hidden;
+    color: #333; /* Dark Gray for text */
+    background-color: #f8f9fa; /* Light Gray for background */
+    margin: 0;
+    padding: 0;
 }
 
-/* Container Styles */
 .container {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
-    backdrop-filter: blur(15px);
-    border-radius: 12px;
-    padding: 25px;
-    margin: 40px auto;
-    max-width: 800px; /* Restrict content width for better readability */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the main container */
+    border: 1px solid #ddd; /* Subtle border for definition */
+    border-radius: 8px; /* Rounded edges for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-/* Header Styles */
+/* Header Styling */
 header {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 2px solid #6c63ff; /* Purple border for highlight */
+    margin-bottom: 20px;
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #ffa500; /* Highlighted header color */
-    margin-bottom: 10px;
+    color: #6c63ff; /* Primary color */
 }
 
 header p {
-    font-size: 1rem;
-    color: #ccc;
-    margin-top: 5px;
+    font-size: 1.1rem;
+    color: #555; /* Secondary text color */
 }
 
-/* Article Styles */
+/* Article Main Content */
 .article {
-    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
 .article h2 {
     font-size: 1.8rem;
-    color: #ffa500; /* Accent color for headings */
-    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #6c63ff; /* Highlight for headings */
+}
+
+.article h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #3a3d41; /* Darker heading for subtopics */
 }
 
 .article p {
-    font-size: 1rem;
-    color: #d0d0d0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    overflow-x: auto;
-}
-
-th, td {
-    padding: 10px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-th {
-    background-color: rgba(255, 165, 0, 0.2);
-    color: #fff;
-    text-align: left;
-}
-
-td {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-/* Code Block Styles */
+/* Code Block Styling */
 pre {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 4px solid #6c63ff;
     overflow-x: auto;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    margin: 20px 0;
+    border-radius: 5px;
 }
 
 code {
-    color: #ffa500; /* Highlighted code color */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e9ecef;
+    color: #d63384; /* Subtle pink for code */
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
-/* Footer Styles */
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f8f9fa; /* Light background */
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #6c63ff; /* Purple background */
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
-    margin-top: 50px;
-    color: #888;
+    margin-top: 30px;
+    padding: 10px;
     font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
 }
 
-/* Links */
-a {
-    color: #ffa500;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Media Query for Mobile Responsiveness */
+/* Responsive Styling */
 @media (max-width: 768px) {
-    .container {
-        padding: 20px;
-        margin: 20px auto;
+    body {
+        padding: 10px;
     }
 
     header h1 {
@@ -130,11 +133,7 @@ a:hover {
         font-size: 1.5rem;
     }
 
-    .article p {
-        font-size: 0.95rem;
-    }
-
-    pre {
-        font-size: 0.9rem;
+    .article h3 {
+        font-size: 1.3rem;
     }
 }
