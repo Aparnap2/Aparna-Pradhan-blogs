@@ -8,18 +8,22 @@
 
 body {
     background-color: #121212;
-    color: #fff;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Container Styles */
 .container {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 165, 0, 0.15), rgba(255, 69, 0, 0.15));
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
     padding: 20px;
-    margin: 20px;
-    max-width: 90%; /* Adjust max-width for responsiveness */
-    margin: 0 auto;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Header Styles */
@@ -29,9 +33,10 @@ header {
 }
 
 h1 {
-    font-size: 24px; /* Adjust font size for smaller screens */
+    font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
+    color: #ffa500;
 }
 
 /* Article Styles */
@@ -41,42 +46,46 @@ h1 {
 }
 
 h2 {
-    font-size: 20px; /* Adjust font size for smaller screens */
+    font-size: 22px;
     margin-bottom: 15px;
+    color: #ff6347;
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.7;
     margin-bottom: 15px;
+    font-size: 18px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #222;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffa500;
 }
 
 pre {
-    background-color: #222;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffa500;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
+    margin-bottom: 15px;
 }
 
 code {
-    color: #fff;
+    color: #ffa500;
 }
 
 /* Footer Styles */
@@ -84,23 +93,30 @@ footer {
     text-align: center;
     margin-top: 30px;
     color: #ccc;
+    font-size: 14px;
 }
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
+        margin: 10px auto;
+        border-radius: 10px;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     p {
         font-size: 16px;
+    }
+
+    th, td {
+        font-size: 14px;
     }
 }
