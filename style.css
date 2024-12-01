@@ -1,73 +1,107 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff; /* Changed to white for dark mode */
+  background-color: #2c3e50; /* Changed to a dark blue for dark mode */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Container Styles */
 
 .container {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+  background: linear-gradient(145deg, #13141e, #1c1f2c); /* Added gradient effect */
+  border-radius: 8px;
+  box-shadow:  20px 20px 60px #0a0c12, -20px -20px 60px #14151f; /* Added glass effect */
+  padding: 40px;
 }
 
+/* Header Styles */
+
 header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 h1 {
-    color: #2c3e50;
+  color: #4CAF50; /* Changed to a bright green for contrast */
 }
 
 h2, h3 {
-    color: #34495e;
-    margin-top: 30px;
+  color: #64FFDA; /* Changed to a bright cyan for contrast */
+  margin-top: 30px;
 }
 
+/* Text Styles */
+
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
+/* Code Block Styles */
+
 pre {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 15px;
-    overflow-x: auto;
+  background-color: #f8f8f8; /* Changed to a light gray for contrast */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  overflow-x: auto;
 }
 
 code {
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: 14px;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 14px;
 }
+
+/* Blockquote Styles */
 
 blockquote {
-    border-left: 4px solid #3498db;
-    padding-left: 20px;
-    margin-left: 0;
-    font-style: italic;
-    color: #555;
+  border-left: 4px solid #64FFDA; /* Changed to a bright cyan for contrast */
+  padding-left: 20px;
+  margin-left: 0;
+  font-style: italic;
+  color: #fff; /* Changed to white for contrast */
 }
+
+/* Footer Styles */
 
 footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 14px;
-    color: #777;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff; /* Changed to white for contrast */
 }
+
+/* Media Queries */
 
 @media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
+  .container {
+    padding: 20px;
+  }
 }
 
+@media (max-width: 400px) {
+  .container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2, h3 {
+    font-size: 18px;
+  }
+}
