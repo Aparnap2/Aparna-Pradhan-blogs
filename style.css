@@ -1,94 +1,73 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #09ff00, #addaff, #ffae00);
-    color: #662e00;
-    margin: 0;
-    font-size: 16px; /* Base font size for readability */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 .container {
-    width: 90%; /* Adjust for smaller screens */
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
 }
 
 header {
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1rem; /* Add padding for header content */
-}
-
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.flag {
-    width: 30px;
-    height: 20px;
-    float: right;
-}
-
-main {
-    padding: 2rem 0;
-}
-
-.hero {
     text-align: center;
-    background: #f8f8f8;
-    padding: 1.5rem;
-    border-radius: 5px;
+    margin-bottom: 40px;
 }
 
-.input-container {
-    margin: 1rem auto;
+h1 {
+    color: #2c3e50;
+}
+
+h2, h3 {
+    color: #34495e;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+pre {
+    background-color: #f8f8f8;
     border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
 }
 
-button {
-    background-color: #ff9900;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    font-size: 1rem; /* Ensure readable button text */
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
 }
 
-button:hover {
-    background-color: #f98700;
-}
-
-.image-container {
-    margin: 1rem auto;
-    text-align: center;
+blockquote {
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    margin-left: 0;
+    font-style: italic;
+    color: #555;
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+    margin-top: 40px;
     text-align: center;
+    font-size: 14px;
+    color: #777;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container {
-        width: 95%;
+        padding: 20px;
     }
 }
 
-@media (max-width: 576px) {
-    .flag {
-        display: none;
-    }
-
-    .hero {
-        padding: 1rem; /* Reduce padding on smaller screens */
-    }
-}
