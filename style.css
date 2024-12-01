@@ -80,6 +80,7 @@ pre {
 
 code {
     font-family: 'Courier New', Courier, monospace;
+font-size: 10px;
     background-color: #37474f; /* Slightly lighter background */
     color: #ffcb6b; /* Yellow for inline code */
     padding: 2px 4px;
