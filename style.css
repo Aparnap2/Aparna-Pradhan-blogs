@@ -9,8 +9,8 @@ body, h1, h2, h3, p, table, footer {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333; /* Dark Gray for text */
-    background-color: #f8f9fa; /* Light Gray for background */
+    color: #0000FF; /* Dark Gray for text */
+    background-color: #ffffff; /* Light Gray for background */
     margin: 0;
     padding: 0;
 }
@@ -88,7 +88,7 @@ code {
 
 /* Table Styling */
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     margin: 20px 0;
     background-color: #f8f9fa; /* Light background */
