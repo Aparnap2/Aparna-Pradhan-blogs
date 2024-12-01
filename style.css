@@ -7,59 +7,59 @@ body, h1, h2, h3, p, table, footer {
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #0000FF; /* Dark Gray for text */
-    background-color: #ffffff; /* Light Gray for background */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #e0e0e0; /* Light text color for dark mode */
+    background-color: #121212; /* Dark background */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 100%; /* Full-width on smaller screens */
-    max-width: 1200px; /* Limit max width for larger screens */
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* White background for the main container */
-    border: 1px solid #ddd; /* Subtle border for definition */
-    border-radius: 8px; /* Rounded edges for modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    overflow: hidden;
 }
 
 /* Header Styling */
 header {
     text-align: center;
     padding: 20px 0;
-    border-bottom: 2px solid #6c63ff; /* Purple border for highlight */
+    border-bottom: 2px solid #4caf50; /* Green accent color */
     margin-bottom: 20px;
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #6c63ff; /* Primary color */
+    color: #4caf50; /* Accent for headings */
 }
 
 header p {
     font-size: 1.1rem;
-    color: #555; /* Secondary text color */
+    color: #bdbdbd; /* Secondary light gray text */
 }
 
-/* Article Main Content */
+/* Article Content */
 .article {
-    line-height: 1.8;
     font-size: 1rem;
+    color: #e0e0e0;
 }
 
 .article h2 {
     font-size: 1.8rem;
     margin-top: 20px;
-    color: #6c63ff; /* Highlight for headings */
+    color: #81c784; /* Lighter green for headings */
 }
 
 .article h3 {
     font-size: 1.5rem;
     margin-top: 15px;
-    color: #3a3d41; /* Darker heading for subtopics */
+    color: #66bb6a; /* Subtle green for subheadings */
 }
 
 .article p {
@@ -68,46 +68,54 @@ header p {
 
 /* Code Block Styling */
 pre {
-    background-color: #f4f4f4;
+    background-color: #263238; /* Darker gray for code blocks */
     padding: 10px;
-    border-left: 4px solid #6c63ff;
+    border-left: 4px solid #4caf50; /* Green border for code */
     overflow-x: auto;
     font-size: 0.9rem;
-    color: #333;
+    color: #c3e88d; /* Soft green text for code */
     margin: 20px 0;
     border-radius: 5px;
 }
 
 code {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #e9ecef;
-    color: #d63384; /* Subtle pink for code */
+    background-color: #37474f; /* Slightly lighter background */
+    color: #ffcb6b; /* Yellow for inline code */
     padding: 2px 4px;
     border-radius: 4px;
 }
 
 /* Table Styling */
 table {
-    width: 90%;
+    width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    background-color: #f8f9fa; /* Light background */
+    background-color: #1c1c1c; /* Darker table background */
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    overflow-x: auto; /* Add horizontal scroll for small screens */
 }
 
 table th, table td {
-    padding: 10px;
+    padding: 12px 15px;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid #333; /* Darker border */
 }
 
 table th {
-    background-color: #6c63ff; /* Purple background */
-    color: white;
+    background-color: #388e3c; /* Green header background */
+    color: #ffffff; /* White text */
     font-weight: bold;
 }
 
 table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #2a2a2a; /* Alternating row color */
+}
+
+table tr:nth-child(odd) {
+    background-color: #1e1e1e; /* Alternating row color */
 }
 
 /* Footer Styling */
@@ -116,8 +124,8 @@ footer {
     margin-top: 30px;
     padding: 10px;
     font-size: 0.9rem;
-    color: #555;
-    border-top: 1px solid #ddd;
+    color: #bdbdbd; /* Secondary gray text */
+    border-top: 1px solid #333; /* Subtle border */
 }
 
 /* Responsive Styling */
