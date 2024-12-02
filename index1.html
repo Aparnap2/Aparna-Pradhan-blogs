@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #343a40;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+    }
+    .blog-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .blog-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .blog-item:hover {
+      transform: translateY(-5px);
+    }
+    .blog-item h2 {
+      margin-top: 0;
+    }
+    .blog-item a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .blog-item a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Technical Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Latest Blogs</h2>
+    <div class="blog-list">
+      <div class="blog-item">
+        <h2><a href="#blog1">Understanding JavaScript Closures</a></h2>
+        <p>A deep dive into closures and their practical applications in web development.</p>
+      </div>
+      <div class="blog-item">
+        <h2><a href="#blog2">Getting Started with Docker</a></h2>
+        <p>A beginner's guide to containerizing your applications with Docker.</p>
+      </div>
+      <div class="blog-item">
+        <h2><a href="#blog3">Exploring React Hooks</a></h2>
+        <p>Learn how to leverage React Hooks for cleaner and more efficient code.</p>
+      </div>
+      <div class="blog-item">
+        <h2><a href="#blog4">Introduction to AI and Machine Learning</a></h2>
+        <p>An overview of AI concepts and how machine learning is shaping the future.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Technical Blog. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
