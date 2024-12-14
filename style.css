@@ -9,94 +9,95 @@
 
 /* Body Styling */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6; /* Improved readability */
-    color: #e0e0e0; /* Light text color for dark mode */
-    background-color: #121212; /* Dark background */
+    font-family: 'Arial', sans-serif; /* Changed font for a cleaner look */
+    line-height: 1.7; /* Increased line height for better readability */
+    color: #f0f0f0; /* Light text color for dark mode */
+    background-color: #0d0d0d; /* Darker background for contrast */
+    padding: 20px; /* Added padding for body */
 }
 
 /* Container Styling */
 .container {
-    width: 90%;
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #1e1e1e; /* Slightly lighter dark background */
-    border-radius: 12px; /* Softer look */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
-    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #1a1a1a; /* Darker container background */
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Deeper shadow for depth */
 }
 
 /* Header Styling */
 header {
     text-align: center;
     padding: 40px 0; /* Increased padding for spaciousness */
-    border-bottom: 2px solid #4caf50; /* Green accent color */
-    margin-bottom: 30px; /* Separation from content */
+    border-bottom: 3px solid #4caf50; /* Thicker green accent color */
+    margin-bottom: 40px; /* Increased margin for separation */
 }
 
 header h1 {
-    font-size: 2.5rem; /* Adjusted font size for prominence */
+    font-size: 3rem; /* Larger font size for prominence */
     color: #4caf50; /* Accent color */
     margin-bottom: 10px; /* Space below heading */
 }
 
 header p {
-    font-size: 1.1rem; /* Subtitle size */
-    color: #bdbdbd; /* Secondary light gray text */
+    font-size: 1.2rem; /* Subtitle size */
+    color: #b0b0b0; /* Secondary light gray text */
 }
 
 /* Article Content */
 .article {
-    font-size: 1rem;
+    font-size: 1.1rem; /* Slightly larger font for better readability */
     color: #e0e0e0;
 }
 
 .article h2 {
-    font-size: 2.2rem; /* Main article headings */
-    margin-top: 25px; /* Spacing */
+    font-size: 2.5rem; /* Main article headings */
+    margin-top: 30px; /* Spacing */
     color: #81c784; /* Lighter green */
+    border-bottom: 2px solid #4caf50; /* Underline for emphasis */
+    padding-bottom: 10px; /* Space below heading */
 }
 
 .article h3 {
-    font-size: 1.5rem; /* Subheadings */
-    margin-top: 20px; /* Spacing */
+    font-size: 1.8rem; /* Subheadings */
+    margin-top: 25px; /* Spacing */
     color: #66bb6a; /* Subtle green */
 }
 
 .article p {
-    margin-bottom: 20px; /* Spacing */
+    margin-bottom: 25px; /* Increased spacing */
 }
 
 /* Code Block Styling */
 pre {
     background-color: #263238; /* Darker gray for code blocks */
-    padding: 15px; /* Comfort padding */
-    border-left: 4px solid #4caf50; /* Green border */
+    padding: 20px; /* Comfort padding */
+    border-left: 5px solid #4caf50; /* Thicker green border */
     overflow-x: auto; /* Horizontal scroll for small screens */
-    font-size: 0.95rem; /* Code font size */
+    font-size: 1rem; /* Code font size */
     color: #c3e88d; /* Soft green text */
-    margin: 25px 0; /* Spacing */
-    border-radius: 8px; /* Softer look */
+    margin: 30px 0; /* Spacing */
+    border-radius: 10px; /* Softer look */
 }
 
 /* Inline Code Styling */
 code {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem; /* Inline code font size */
+    font-size: 0.95rem; /* Inline code font size */
     background-color: #37474f; /* Slightly lighter background */
     color: #ffcb6b; /* Yellow for inline code */
-    padding: 3px 6px; /* Touch target padding */
-    border-radius: 4px; /* Rounded corners */
+    padding: 4px 8px; /* Increased padding for better touch targets */
+    border-radius: 5px; /* Rounded corners */
 }
 
 /* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 25px 0; /* Spacing */
+    margin: 30px 0; /* Spacing */
     background-color: #1c1c1c; /* Darker table background */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Prevent overflow */
     display: block; /* Block display for responsiveness */
     overflow-x: auto; /* Horizontal scroll for small screens */
@@ -120,13 +121,4 @@ table tr:nth-child(even) {
 }
 
 table tr:nth-child(odd) {
-    background-color: #1e1e1e; /* Alternating row color */
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    margin-top: 30px; /* Spacing above footer */
-    padding: 20px 0; /* Padding for footer */
-    color: #bdbdbd; /* Light gray text */
-    background-color: #1
+    background-color: #1e
