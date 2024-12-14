@@ -1,5 +1,7 @@
-/* General Reset */
-body, h1, h2, h3, p, table, footer {
+/* Reset default margin and padding for all elements */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,11 +10,9 @@ body, h1, h2, h3, p, table, footer {
 /* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6; /* Slightly reduced line height for better readability */
+    line-height: 1.6; /* Improved readability */
     color: #e0e0e0; /* Light text color for dark mode */
     background-color: #121212; /* Dark background */
-    margin: 0;
-    padding: 0;
 }
 
 /* Container Styling */
@@ -22,7 +22,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     background-color: #1e1e1e; /* Slightly lighter dark background */
-    border-radius: 12px; /* Increased border radius for a softer look */
+    border-radius: 12px; /* Softer look */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
     overflow: hidden;
 }
@@ -30,18 +30,18 @@ body {
 /* Header Styling */
 header {
     text-align: center;
-    padding: 30px 0; /* Increased padding for a more spacious header */
+    padding: 30px 0; /* Spacious header */
     border-bottom: 2px solid #4caf50; /* Green accent color */
-    margin-bottom: 30px; /* Increased margin for separation */
+    margin-bottom: 30px; /* Separation from content */
 }
 
 header h1 {
-    font-size: 2.8rem; /* Increased font size for prominence */
-    color: #4caf50; /* Accent for headings */
+    font-size: 2.8rem; /* Prominent heading */
+    color: #4caf50; /* Accent color */
 }
 
 header p {
-    font-size: 1.2rem; /* Slightly larger font for the subtitle */
+    font-size: 1.2rem; /* Subtitle size */
     color: #bdbdbd; /* Secondary light gray text */
 }
 
@@ -52,56 +52,57 @@ header p {
 }
 
 .article h2 {
-    font-size: 2rem; /* Increased size for main article headings */
-    margin-top: 25px; /* Increased margin for better spacing */
-    color: #81c784; /* Lighter green for headings */
+    font-size: 2rem; /* Main article headings */
+    margin-top: 25px; /* Spacing */
+    color: #81c784; /* Lighter green */
 }
 
 .article h3 {
-    font-size: 1.6rem; /* Increased size for subheadings */
-    margin-top: 20px; /* Increased margin for better spacing */
-    color: #66bb6a; /* Subtle green for subheadings */
+    font-size: 1.6rem; /* Subheadings */
+    margin-top: 20px; /* Spacing */
+    color: #66bb6a; /* Subtle green */
 }
 
 .article p {
-    margin-bottom: 20px; /* Increased margin for better spacing */
+    margin-bottom: 20px; /* Spacing */
 }
 
 /* Code Block Styling */
 pre {
     background-color: #263238; /* Darker gray for code blocks */
-    padding: 15px; /* Increased padding for comfort */
-    border-left: 4px solid #4caf50; /* Green border for code */
-    overflow-x: auto;
-    font-size: 0.95rem; /* Slightly larger font for code */
-    color: #c3e88d; /* Soft green text for code */
-    margin: 25px 0; /* Increased margin for better spacing */
-    border-radius: 8px; /* Increased border radius for a softer look */
+    padding: 15px; /* Comfort padding */
+    border-left: 4px solid #4caf50; /* Green border */
+    overflow-x: auto; /* Horizontal scroll for small screens */
+    font-size: 0.95rem; /* Code font size */
+    color: #c3e88d; /* Soft green text */
+    margin: 25px 0; /* Spacing */
+    border-radius: 8px; /* Softer look */
 }
 
 code {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem; /* Adjusted font size for inline code */
+    font-size: 0.9rem; /* Inline code font size */
     background-color: #37474f; /* Slightly lighter background */
     color: #ffcb6b; /* Yellow for inline code */
-    padding: 3px 6px; /* Increased padding for better touch targets */
-    border-radius: 4px;
+    padding: 3px 6px; /* Touch target padding */
+    border-radius: 4px; /* Rounded corners */
 }
 
 /* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 25px 0; /* Increased margin for better spacing */
+    margin: 25px 0; /* Spacing */
     background-color: #1c1c1c; /* Darker table background */
-    border-radius: 8px;
-    overflow: hidden;
-    display: block;
-    overflow-x: auto; /* Add horizontal scroll for small screens */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    display: block; /* Block display for responsiveness */
+    overflow-x: auto; /* Horizontal scroll for small screens */
 }
 
-table th, table td {
-    padding: 15px; /* Increased padding for better touch targets */
+table th,
+table td {
+    padding: 15px; /* Touch target padding */
     text-align: left;
     border: 1px solid #333; /* Darker border */
 }
@@ -123,4 +124,8 @@ table tr:nth-child(odd) {
 /* Footer Styling */
 footer {
     text-align: center;
-    margin-top:
+    margin-top: 30px; /* Spacing above footer */
+    padding: 20px 0; /* Padding for footer */
+    color: #bdbdbd; /* Light gray text */
+    background-color: #1e1e1e; /* Consistent background */
+}
