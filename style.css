@@ -30,18 +30,19 @@ body {
 /* Header Styling */
 header {
     text-align: center;
-    padding: 30px 0; /* Spacious header */
+    padding: 40px 0; /* Increased padding for spaciousness */
     border-bottom: 2px solid #4caf50; /* Green accent color */
     margin-bottom: 30px; /* Separation from content */
 }
 
 header h1 {
-    font-size: 2.8rem; /* Prominent heading */
+    font-size: 2.5rem; /* Adjusted font size for prominence */
     color: #4caf50; /* Accent color */
+    margin-bottom: 10px; /* Space below heading */
 }
 
 header p {
-    font-size: 1.2rem; /* Subtitle size */
+    font-size: 1.1rem; /* Subtitle size */
     color: #bdbdbd; /* Secondary light gray text */
 }
 
@@ -52,13 +53,13 @@ header p {
 }
 
 .article h2 {
-    font-size: 2rem; /* Main article headings */
+    font-size: 2.2rem; /* Main article headings */
     margin-top: 25px; /* Spacing */
     color: #81c784; /* Lighter green */
 }
 
 .article h3 {
-    font-size: 1.6rem; /* Subheadings */
+    font-size: 1.5rem; /* Subheadings */
     margin-top: 20px; /* Spacing */
     color: #66bb6a; /* Subtle green */
 }
@@ -79,6 +80,7 @@ pre {
     border-radius: 8px; /* Softer look */
 }
 
+/* Inline Code Styling */
 code {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9rem; /* Inline code font size */
@@ -127,5 +129,4 @@ footer {
     margin-top: 30px; /* Spacing above footer */
     padding: 20px 0; /* Padding for footer */
     color: #bdbdbd; /* Light gray text */
-    background-color: #1e1e1e; /* Consistent background */
-}
+    background-color: #1
