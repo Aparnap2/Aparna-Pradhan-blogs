@@ -9,10 +9,10 @@
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif; /* Changed font for a cleaner look */
+    font-family: 'Arial', sans-serif; /* Clean font for readability */
     line-height: 1.7; /* Increased line height for better readability */
-    color: #f0f0f0; /* Light text color for dark mode */
-    background-color: #0d0d0d; /* Darker background for contrast */
+    color: #e0e0e0; /* Light text color for dark mode */
+    background-color: #121212; /* Dark background */
     padding: 20px; /* Added padding for body */
 }
 
@@ -21,7 +21,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
-    background-color: #1a1a1a; /* Darker container background */
+    background-color: #1e1e1e; /* Darker container background */
     border-radius: 15px; /* Softer corners */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Deeper shadow for depth */
 }
@@ -65,8 +65,33 @@ header p {
     color: #66bb6a; /* Subtle green */
 }
 
+.article h4 {
+    font-size: 1.5rem; /* Smaller subheadings */
+    margin-top: 20px; /* Spacing */
+    color: #4db6ac; /* Teal color for h4 */
+}
+
 .article p {
     margin-bottom: 25px; /* Increased spacing */
+}
+
+/* List Styling */
+ul, ol {
+    margin: 20px 0; /* Margin for lists */
+    padding-left: 20px; /* Indentation for lists */
+}
+
+li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+/* Blockquote Styling */
+blockquote {
+    border-left: 4px solid #4caf50; /* Green border for blockquotes */
+    padding: 10px 20px; /* Padding for blockquote */
+    margin: 20px 0; /* Margin for spacing */
+    color: #b0b0b0; /* Light gray text */
+    background-color: #1c1c1c; /* Dark background for blockquote */
 }
 
 /* Code Block Styling */
@@ -88,7 +113,8 @@ code {
     background-color: #37474f; /* Slightly lighter background */
     color: #ffcb6b; /* Yellow for inline code */
     padding: 4px 8px; /* Increased padding for better touch targets */
-    border-radius: 5px; /* Rounded corners */
+      
+border-radius: 5px; /* Rounded corners */
 }
 
 /* Table Styling */
@@ -121,4 +147,63 @@ table tr:nth-child(even) {
 }
 
 table tr:nth-child(odd) {
-    background-color: #1e
+    background-color: #1e1e1e; /* Alternating row color */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px; /* Spacing above footer */
+    padding: 20px 0; /* Padding for footer */
+    color: #b0b0b0; /* Light gray text */
+    background-color: #1e1e1e; /* Consistent background */
+    border-top: 2px solid #4caf50; /* Green top border */
+}
+
+/* Link Styling */
+a {
+    color: #4caf50; /* Green for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button Styling */
+button {
+    background-color: #4caf50; /* Green background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Smaller heading on mobile */
+    }
+
+    .article h2 {
+        font-size: 2rem; /* Smaller h2 on mobile */
+    }
+
+    .article h3 {
+        font-size: 1.5rem; /* Smaller h3 on mobile */
+    }
+
+    .article h4 {
+        font-size: 1.3rem; /* Smaller h4 on mobile */
+    }
+
+    .container {
+        padding: 15px; /* Less padding on mobile */
+    }
+}
