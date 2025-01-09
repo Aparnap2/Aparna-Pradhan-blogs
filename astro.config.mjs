@@ -21,7 +21,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "aparnap2.github.io",
+  site: "https://github.com/Aparnap2/Aparna-Pradhan-blogs/",
   base: "/",
   trailingSlash: "always",
   integrations: [
